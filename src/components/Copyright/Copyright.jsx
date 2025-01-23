@@ -5,7 +5,7 @@ export const Copyright = ({ siteName }) => {
 
   return (
     <p>
-      &copy; Copyright {siteName} {currentYear()}
+      &copy; {currentYear()} {siteName} All rights reserved.
     </p>
   );
 };

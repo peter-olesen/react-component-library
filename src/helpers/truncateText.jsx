@@ -5,4 +5,4 @@ export const truncateText = (text, maxLength) => {
   return text;
 };
 
-// {shortenText("text that needs to be truncated", 10)}
+// {truncateText("text that needs to be truncated", 10)}

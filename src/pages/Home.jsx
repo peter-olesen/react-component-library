@@ -6,11 +6,15 @@ import { truncateText } from "../helpers/truncateText";
 import { Heading } from "../components/Heading/Heading";
 import { Newsletter } from "../components/Newsletter/Newsletter";
 import { Navigation } from "../components/Navigation/Navigation";
+import { CurrentTime } from "../components/CurrentTime/CurrentTime";
+import { ConsentBanner } from "../components/ConsentBanner/ConsentBanner";
 
 export const Home = () => {
   return (
     <div>
+      <ConsentBanner />
       <Heading level="2">react-component-library</Heading>
+      <CurrentTime />
       <Navigation />
       <Newsletter />
       <Section w="1200px" h="300px" m="2rem 1rem" bc="#000" tc="#fff">
@@ -30,14 +34,14 @@ export const Home = () => {
         label="name field"
         placeholder="Placeholder"
         bd="1px solid red"
-        p="1rem 1rem"
+        p="1rem"
         ol="none"
         required={true}
         action={(value) => console.log(value)}
       />
 
       {truncateText("text that needs to be truncated", 10)}
-      <Copyright />
+      <Copyright siteName="Some site name herp derp." />
     </div>
   );
 };
