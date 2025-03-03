@@ -12,19 +12,18 @@
   gap: 2rem;
   padding: 2rem;
   border-top: 1px solid black;
-
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+  .ConsentBanner {
     width: 768px;
-
-    p {
-      margin-right: 2rem;
-    }
   }
-
-  .buttons {
-    text-align: right;
-    padding-right: 1rem;
+  .ConsentBanner p {
+    margin-right: 2rem;
   }
+}
+.ConsentBanner .buttons {
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .ConsentButton {
@@ -40,10 +39,9 @@
   align-items: center;
   gap: 8px;
   padding: 0 8px;
-
-  svg {
-    width: 32px;
-    height: 32px;
-    color: #270d0b;
-  }
+}
+.ConsentButton svg {
+  width: 32px;
+  height: 32px;
+  color: #270d0b;
 }

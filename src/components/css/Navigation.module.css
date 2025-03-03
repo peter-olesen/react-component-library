@@ -1,0 +1,46 @@
+.Navigation {
+  position: relative;
+}
+.Navigation .burgerMenu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .Navigation .burgerMenu {
+    display: block;
+  }
+}
+.Navigation .menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .Navigation .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+}
+.Navigation .menu.open {
+  display: flex;
+}
+.Navigation li a {
+  text-decoration: none;
+  color: black;
+}
+.Navigation li a:hover {
+  text-decoration: underline;
+}

@@ -1,4 +1,5 @@
 import ReactGA from "react-ga4";
+import { PiCookie } from "react-icons/pi";
 import s from "./ConsentBanner.module.scss";
 import { useEffect, useState } from "react";
 
@@ -60,7 +61,8 @@ export const ConsentBanner = () => {
       {(hasUserCookie === "true" || hasUserCookie === "false") &&
         !showConsent && (
           <button className={s.ConsentButton} onClick={showConsentBanner}>
-            Ændre cookieindstillinger
+            {/* Ændre cookieindstillinger */}
+            <PiCookie /> Cookie-samtykke
           </button>
         )}
     </>

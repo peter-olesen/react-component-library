@@ -17,7 +17,7 @@ export const Home = () => {
       <CurrentTime />
       <Navigation />
       <Newsletter />
-      <Section w="1200px" h="300px" m="2rem 1rem" bc="#000" tc="#fff">
+      <Section w="200px" h="100px" m="2rem 1rem" bc="#000" tc="#fff">
         123
       </Section>
       <Button

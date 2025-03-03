@@ -1,11 +1,12 @@
 import s from "./Grid.module.scss";
 
-export const Grid = ({ children, col, fr, gap, padding, style }) => {
+export const Grid = ({ children, style }) => {
   const inline = {
-    gridTemplateColumns: `repeat(${col}, {${fr}})`,
-    gap: `${gap}`,
-    padding: `${padding}`,
+    gridTemplateColumns: `repeat(${col}, ${fr})`,
+    gap,
+    padding,
   };
+
   return (
     <div className={s.Grid} style={{ ...inline, ...style }}>
       {children}

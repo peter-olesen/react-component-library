@@ -9,19 +9,6 @@ export const InputField = ({
 
   // Styling options
   className,
-  w,
-  minw,
-  maxw,
-  h,
-  minh,
-  maxh,
-  m,
-  p,
-  bc,
-  tc,
-  br,
-  bd,
-  ol,
 }) => {
   const onInputChange = (e) => {
     action(e.target.value);
@@ -38,21 +25,6 @@ export const InputField = ({
         required={required}
         onChange={(event) => onInputChange(event)}
         className={className}
-        style={{
-          width: w,
-          minWidth: minw,
-          maxWidth: maxw,
-          height: h,
-          minHeight: minh,
-          maxHeight: maxh,
-          margin: m,
-          padding: p,
-          backgroundColor: bc,
-          color: tc,
-          borderRadius: br,
-          border: bd,
-          outline: ol,
-        }}
       />
     </>
   );

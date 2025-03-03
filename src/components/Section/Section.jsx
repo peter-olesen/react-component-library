@@ -1,33 +1,19 @@
 export const Section = ({
   children,
-  w,
-  minw,
-  maxw,
-  h,
-  minh,
-  maxh,
-  m,
-  p,
-  bc,
-  tc,
-  br,
-  bd,
+  className,
+  width,
+  height,
+  margin,
+  padding,
 }) => {
   return (
     <section
+      className={className}
       style={{
-        width: w,
-        minWidth: minw,
-        maxWidth: maxw,
-        height: h,
-        minHeight: minh,
-        maxHeight: maxh,
-        margin: m,
-        padding: p,
-        backgroundColor: bc,
-        color: tc,
-        borderRadius: br,
-        border: bd,
+        width: width,
+        height: height,
+        margin: margin,
+        padding: padding,
       }}
     >
       {children}

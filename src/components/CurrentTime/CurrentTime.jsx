@@ -31,5 +31,5 @@ export const CurrentTime = () => {
     };
   }, []);
 
-  return <div>{time}</div>;
+  return <span>{time}</span>;
 };

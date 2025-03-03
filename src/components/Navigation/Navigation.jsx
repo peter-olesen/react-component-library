@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import { PATHS } from "../../router/paths.js";
 import { Button } from "../Button/Button.jsx";
 import s from "./Navigation.module.scss";
