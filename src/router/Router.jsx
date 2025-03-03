@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router";
+
+// Layout
 import { Layout } from "../layouts/Layout";
 
 // Pages
@@ -9,6 +11,7 @@ import { PageNotFound } from "../pages/PageNotFound";
 export const Router = () => {
   const location = useLocation();
 
+  // Page titles
   useEffect(() => {
     const pageTitles = {
       "/": "react-component-library",
@@ -26,6 +29,15 @@ export const Router = () => {
     <Routes>
       <Route path={"/"} element={<Layout />}>
         <Route index element={<Home />} />
+
+        {/* <Route
+          path={"/dashboard"}
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        /> */}
 
         <Route path={"/*"} element={<PageNotFound />} />
       </Route>

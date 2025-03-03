@@ -17,25 +17,15 @@ export const Home = () => {
       <CurrentTime />
       <Navigation />
       <Newsletter />
-      <Section w="200px" h="100px" m="2rem 1rem" bc="#000" tc="#fff">
+      <Section w="200px" h="100px" m="2rem 1rem">
         123
       </Section>
-      <Button
-        bc="red"
-        bd="1px solid #000"
-        br="1rem"
-        action={() => alert("123")}
-      >
-        This is button
-      </Button>
+      <Button action={() => alert("123")}>This is button</Button>
       <InputField
         name="namefield"
         id="namefield"
         label="name field"
         placeholder="Placeholder"
-        bd="1px solid red"
-        p="1rem"
-        ol="none"
         required={true}
         action={(value) => console.log(value)}
       />
