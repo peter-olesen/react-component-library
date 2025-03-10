@@ -1,0 +1,64 @@
+@import "../../style/variables";
+@import "../../style/placeholders";
+
+.HeroSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+
+  .HeroContent {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+
+    .LeftArrow {
+      background: transparent;
+      border: none;
+
+      img {
+        transform: rotate(180deg);
+        filter: invert(100%);
+      }
+    }
+
+    .RightArrow {
+      background: transparent;
+      border: none;
+
+      img {
+        filter: invert(100%);
+      }
+    }
+
+    h2 {
+      @extend %Lobster;
+      font-size: 112px;
+      color: $White;
+      margin: 0;
+    }
+  }
+
+  .HeroDots {
+    button {
+      width: 23px;
+      height: 23px;
+      background: $White;
+      border: none;
+      border-radius: 50%;
+      margin: 0.5rem;
+    }
+
+    .Dot {
+      background: $White;
+    }
+
+    .ActiveDot {
+      background: #996666;
+    }
+  }
+}
